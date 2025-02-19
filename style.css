@@ -1,0 +1,137 @@
+
+body { 
+    text-align: center;
+    font-family: 'acumin-pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 100%;
+    margin: 50px 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left, .right {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+input, select {
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+}
+
+canvas { 
+    display: block; 
+    margin: 20px auto; 
+    max-width: 100%;
+}
+
+button {
+    border: solid 2px #b28e92;
+    color: #b28e92;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    max-width: 100%;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #b28e92;
+    color: white;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+#cropButton {
+    border: solid 2px #b28e92; 
+    color: #b28e92; 
+    padding: 10px 0; 
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    height 20px;
+    width: 40%;
+}
+
+#cropButton:hover {
+    background-color: #b28e92;
+    color: white;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
