@@ -10,31 +10,38 @@
         body { 
             text-align: center;
             font-family: 'acumin-pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
         }
         
         .container {
-            max-width: 80%;
-            margin: 100px auto;
-            padding: 30px;
+            max-width: 100%;
+            margin: 50px auto;
+            padding: 20px;
             border: 1px solid #ccc;
             border-radius: 10px;
-            background-color: #f9f9f9;
+            background-color: #fff;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
-            gap: 30px;
+            justify-content: center;
+            gap: 20px;
         }
 
         .left, .right {
-            width: 50%;
+            flex: 1;
+            max-width:100%;
+            width: 100%;
             text-align: center;
         }
 
         input {
-            padding: 5px;
+            padding: 8px;
             font-size: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            width: 100%;
+            width: 90%;
             max-width: 100%;
         }
 
@@ -43,6 +50,7 @@
             flex-direction: column;
             align-items: center;
             gap: 10px;
+            max-width: 100%;
         }
         
         canvas { 
@@ -129,8 +137,8 @@
             color: red;
         }
 
-        @media screen and (max-width: 400px) {
-            .container{
+        @media screen and (max-width: 768px) {
+            .container {
                 flex-direction: column;
             }
         }
