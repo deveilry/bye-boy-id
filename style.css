@@ -7,11 +7,16 @@ body {
     background-image: url('/assets/site bg.png');
     background-size: fill;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .container {
     max-width: 100%;
-    margin: 100px 50px;
+    min-width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 25px;
     padding: 20px;
     border: 1px solid #b28e92;
     border-radius: 10px;
